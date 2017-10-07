@@ -142,8 +142,8 @@ public class StudentController
             model.addAttribute ("course", course);
             return "viewCourse";
         } else {
-            model.addAttribute ("npm", id_course);
-            return "not-found";
+            model.addAttribute ("course", course);
+            return "CourseNotFound";
         }
     }
 
